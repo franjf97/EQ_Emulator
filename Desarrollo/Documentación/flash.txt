@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=RmRRPtxhCZE&ab_channel=MutexEmbedded
+
+Copiar los archivos de la libreria dentro del proyecto:
+
+.h --> Inc
+
+.c --> Src
+
+Añadir en el main.c el #include "MY_FLASH.h"
+
+El sector y start of adress están en el Reference Manual del procesador

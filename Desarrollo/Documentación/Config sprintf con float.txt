@@ -1,0 +1,5 @@
+Para poder usar sprintf con formato %f hay que setear un parametro del proyecto en CUBEIDE:
+
+Ir a Project/Properties/(C/C++ Build)/MCU Settings
+
+Tildar la opcion "Use float with printf ..."

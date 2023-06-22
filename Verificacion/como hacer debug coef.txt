@@ -1,0 +1,4 @@
+1- Con todo el sistema andando normalmente clickear la opcion "Debug" en el IDE. Se va a parar en la primera instruccion del main.
+2- Poner para ver "Live Variables"
+3- Hacer click en "Resume" y de toque reiniciar el ESP para que se logren comunicar al principio
+4- Ver los coeficientes en tiempo real

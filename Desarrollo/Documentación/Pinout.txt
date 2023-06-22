@@ -1,0 +1,75 @@
+STM32:
+
+    I2S:
+        MSTR          -> PC6
+	SCK           -> PB10
+	WS            -> PB12
+	DATA_IN (ADC) -> PC2
+	DATA_OUT (DAC)-> PC3
+
+    UART:
+	RX -> PD6
+	TX -> PD5
+
+    VUMETRO R:
+	R_LED_LOW  -> PD0
+	R_LED_MED  -> PD2
+	R_LED_HIGH -> PD4
+
+    VUMETRO L:
+	L_LED_LOW  -> PC7
+	L_LED_MED  -> PC9
+	L_LED_HIGH -> PC11
+
+
+ESP32:
+
+   DISPLAY:
+	MISO     -> 14
+	MOSI     -> 26
+	SCLK     -> 27
+	TFT_CS   -> 32
+	DC       -> 25
+	RST      -> 33
+	TOUCH_CS -> 12
+
+    UART:
+	RX -> 22
+	TX -> 23
+
+    I2S:
+	MSTR          -> 0
+	SCK           -> 16
+	WS            -> 4
+	DATA_IN (ADC) -> 5
+	DATA_OUT (DAC)-> 17
+
+DISPLAY:
+
+	MOSI --> DIN
+	SCK  --> CLK
+	CS_TFT
+	CS_TOUCH
+	RST
+	DC
+	MISO --> T_OUT
+
+CONECTORES AUDIO:
+
+REF	COMBO	JACK
+señal-->  T  --> T/R (depende cual de los dos canales sea)
+gnd  -->  S  --> S
+gnd  -->  R1 --> S
+señal-->  R2 --> T/R (depende cual de los dos canales sea)
+gnd  -->  R3 --> S
+tierra--> G  --> nada
+
+nota: en un plug estereo el canal izquierdo va en T y el derecho en R
+
+
+Señales audio
+
+Lin = d-->desired
+Rin = x-->input
+Lout = e-->error
+Rout = y-->output

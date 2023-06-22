@@ -1,0 +1,19 @@
+Como usar CMSIS en CubeIde:
+
+1) Ir a https://github.com/ARM-software/CMSIS
+2) Bajar arm_math.h de CMSIS/Include
+3) Bajar libarm_cortexM4lf_math.a de CMSIS/Lib/GCC
+
+Capaz conviene bajar toda la libreria porlas
+
+4)En el proyecto, pegar en "Inc" arm_math.h
+5)En el main.c agregar:
+	
+	#define ARM_MATH_CM4  (si o si antes)
+	
+	#include "arm_math.h"
+
+6) En la carpeta del proyecto crear una carpeta "libs" y agregar dentro el archivo libarm_cortexM4lf_math.a
+7) Ir a Project/Properties/C-C++ Build/Settings/Tool Settings/MCU GCC Linker/Libraries
+8) En "Library Search Path" agregar "libs"
+9) En "Libraries" escribir "arm_cortexM4lf_math"
